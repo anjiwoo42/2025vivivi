@@ -57,14 +57,5 @@ fortunes = [
     "*오늘의 주인공*"
 ]
 # 버튼 클릭
-if st.button("🎲 click! click!"):
-    selected_list = category_decisions.get(category, category_decisions["전체"])
-    decision = random.choice(selected_list)
-    reason = random.choice(reasons)
-
-    st.markdown(f"## ✅ {decision}")
-    st.caption(f"🧠 이유: {reason}")
-
-    st.markdown("---")
-    st.caption("🌟 오늘의 한 마디")
-    st.write(random.choice(fortunes))
+ reason = random.choice(reasons)
+        st.caption(f"🧠 이유: {reason}")
