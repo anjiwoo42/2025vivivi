@@ -1,4 +1,4 @@
-mport streamlit as st
+import streamlit as st
 import random
 
 st.set_page_config(page_title="click해보살", page_icon="🎯")
