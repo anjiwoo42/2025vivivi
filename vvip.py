@@ -17,7 +17,7 @@ category_decisions = {
     ],
     "일": [
         "지금은 버틸 때!", "한 번 도전해보세요.", "쉬는 것도 전략입니다. 😌", 
-        "휴가가 필요해 보여요.", "결과보다 과정이 중요해요.", "주변 사람에게 한번 물어보세요. 🗣️"
+        "휴가가 필요해 보여요.", "결과보다 과정이 중요해요.", "주변 사람에게 한번 물어보세요. 🗣️",
         "고민할 필요 없어요, 그냥 해요! ✅",
     ],
     "일상": [
@@ -30,7 +30,14 @@ category_decisions = {
         "진심을 말해보세요.", "약속을 잡아보세요!", "하지 않는게 좋을 것 같아요..", "바라는데로 되지 않을 수 있어요",
         "주변 사람에게 한번 물어보세요. 🗣️"
     ],
-    "전체": decisions 
+    "전체": [
+    "지금 당장 해보세요! 🔥", "하지 마세요. 후회할지도 몰라요. ❌",
+    "고민할 필요 없어요, 그냥 해요! ✅", "내일로 미뤄보세요. ⏰",
+    "일단 밥 먹고 생각합시다. 🍚", "쉬는 것도 전략입니다. 😌",
+    "주변 사람에게 한번 물어보세요. 🗣️", "뽑기 돌려보는 건 어때요? 🎡",
+    "마음이 더 끌리는 곳으로 가세요!", "하지 않는게 좋을 것 같아요..",
+    "바라는데로 되지 않을 수 있어요"
+]
 }
 
 reasons = [
@@ -41,15 +48,6 @@ reasons = [
     "당신의 오늘 운세는 대박입니다!",
     "복잡할수록 단순하게!",
     "자신감을 가져요"
-]
-# 버튼 
-if st.button("🎲 click! click!"):
-    selected_list = category_decisions.get(category, decisions)
-    decision = random.choice(selected_list)
-    reason = random.choice(reasons)
-
-    st.markdown(f"## ✅ {decision}")
-    st.caption(f"🧠 이유: {reason}")
 
 fortunes = [
     "오늘은 좋은 일이 생길 거예요 🍀",
@@ -61,8 +59,15 @@ fortunes = [
     "완전 럭키비키!",
     "*오늘의 주인공*"
 ]
+# 버튼 클릭
+if st.button("🎲 click! click!"):
+    selected_list = category_decisions.get(category, category_decisions["전체"])
+    decision = random.choice(selected_list)
+    reason = random.choice(reasons)
 
-st.markdown("---")
-st.caption("🌟 오늘의 한 마디")
-st.write(random.choice(fortunes))
+    st.markdown(f"## ✅ {decision}")
+    st.caption(f"🧠 이유: {reason}")
 
+    st.markdown("---")
+    st.caption("🌟 오늘의 한 마디")
+    st.write(random.choice(fortunes))
