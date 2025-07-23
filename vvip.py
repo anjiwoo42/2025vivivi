@@ -4,7 +4,7 @@ import random
 st.set_page_config(page_title="대신 결정해드립니다", page_icon="🎯")
 
 st.title("🎯 대신 결정해드립니다")
-st.write("고민하지 마세요. 그냥 버튼 누르세요!")
+st.write("고민 또는 질문을 머릿속으로 생각하고, 버튼을 눌러주세요")
 
 # 결정 리스트
 decisions = [
