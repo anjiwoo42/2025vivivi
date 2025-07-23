@@ -52,8 +52,8 @@ reasons = [
 ]
 # 버튼 
 if st.button("🎲 click! click!"):
-    decision = random.choice(selected_list)
     selected_list = category_decisions.get(category, category_decisions["전체"])
+    decision = random.choice(selected_list)
     reason = random.choice(reasons)
 
     st.markdown(f"## ✅ {decision}")
