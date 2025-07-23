@@ -44,7 +44,7 @@ reasons = [
 ]
 
 if st.button("🎲 click! click!"):
-    selected_list = category_decisions.get(category, decisions)
+    selected_list = category_decisions(category, decisions)
     decision = random.choice(selected_list)
     reason = random.choice(reasons)
 
