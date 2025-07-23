@@ -69,6 +69,8 @@ fortunes = [
     "*오늘의 주인공*"
 ]
 
+
 st.markdown("---")
-st.caption("🌟 오늘의 한 마디")
+
+if st.button("🌟 오늘의 한 마디")
 st.write(random.choice(fortunes))
