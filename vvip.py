@@ -35,9 +35,21 @@ reasons = [
 
 # 버튼
 if st.button("🎲 click! click!"):
-    with st.spinner("보살이 깊이 생각 중...🧘‍♀️"):
-        time.sleep(1.5)
     decision = random.choice(decisions)
     reason = random.choice(reasons)
+    
     st.markdown(f"## ✅ {decision}")
     st.caption(f"🧠 이유: {reason}")
+
+fortunes = [
+    "오늘은 좋은 일이 생길 거예요 🍀",
+    "너무 조급해하지 말아요.",
+    "말보다는 행동이 필요한 하루!",
+    "당신은 이미 많은 걸 이뤘어요.",
+    "마음 가는 대로 해도 괜찮아요.",
+]
+
+st.markdown("---")
+st.caption("🌟 오늘의 한 마디")
+st.write(random.choice(fortunes))
+
