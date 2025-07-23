@@ -1,9 +1,9 @@
 import streamlit as st
 import random
 
-st.set_page_config(page_title="click해보살", page_icon="🎯")
+st.set_page_config(page_title="click해 보살", page_icon="🎯")
 
-st.title("🎯 click해보살")
+st.title("🎯 click해 보살")
 st.write("고민 또는 질문을 머릿속으로 생각하고, 버튼을 눌러주세요")
 
 # 결정 리스트
