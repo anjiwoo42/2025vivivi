@@ -4,7 +4,8 @@ import random
 st.set_page_config(page_title="대신 결정해드립니다", page_icon="🎲")
 
 st.title("🎲 대신 결정해드립니다")
-st.write("고민은 많고 결정은 어려울 때, 우리가 대신 결정해드릴게요!")
+st.write("고민은 많고 결정은 어려울 때, 우리가 대신 결정해드릴게요!
+화면을 click click !!")
 
 # 사용자 입력
 question = st.text_input("당신의 고민을 입력하세요", placeholder="예: 오늘 치킨 먹을까?")
