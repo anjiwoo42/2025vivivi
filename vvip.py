@@ -3,11 +3,10 @@ import random
 
 st.set_page_config(page_title="click해 보살", page_icon="🎯")
 
-st.image("bosal.png", width=150)
 st.title("🎯 click해 보살")
 st.write("고민 또는 질문을 머릿속으로 생각하고, 버튼을 눌러주세요")
 
-category = st.selectbox("어떤 고민인가요?", ["전체", "연애", "일", "일상"])
+category = st.selectbox("어떤 고민인가요?", ["전체", "연애", "일", "일상","우정"])
 
 # 결정 리스트
 decisions = [
@@ -20,7 +19,8 @@ decisions = [
     "주변 사람에게 한번 물어보세요. 🗣️",
     "뽑기 돌려보는 건 어때요? 🎡",
     "마음이 더 끌리는 곳으로 가세요!",
-    "한 번 쯤은 해보는것도 괜찮아요.^^"
+    "하지 않는게 좋을 것 같아요..",
+    "바라는데로 되지 않을 수 있어요",
 ]
 
 reasons = [
@@ -30,6 +30,7 @@ reasons = [
     "여기까지 온 것도 인연이에요.",
     "당신의 오늘 운세는 대박입니다!",
     "복잡할수록 단순하게!",
+    "자신감을 가져요"
 ]
 
 # 버튼
