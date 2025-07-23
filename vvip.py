@@ -1,9 +1,9 @@
 import streamlit as st
 import random
 
-st.set_page_config(page_title="대신 결정해드립니다", page_icon="🎯")
+st.set_page_config(page_title="click해보살", page_icon="🎯")
 
-st.title("🎯 대신 결정해드립니다")
+st.title("🎯 click해보살")
 st.write("고민 또는 질문을 머릿속으로 생각하고, 버튼을 눌러주세요")
 
 # 결정 리스트
@@ -16,6 +16,8 @@ decisions = [
     "쉬는 것도 전략입니다. 😌",
     "주변 사람에게 한번 물어보세요. 🗣️",
     "뽑기 돌려보는 건 어때요? 🎡",
+    "마음이 더 끌리는 곳으로 가세요!",
+    "한 번 쯤은 해보는것도 괜찮아요.^^"
 ]
 
 reasons = [
@@ -28,7 +30,7 @@ reasons = [
 ]
 
 # 버튼
-if st.button("🎲 결정해줘!"):
+if st.button("🎲 click! click!"):
     decision = random.choice(decisions)
     reason = random.choice(reasons)
 
