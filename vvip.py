@@ -29,10 +29,9 @@ category_decisions = {
         "먼저 연락해보세요 ☎️", "가끔은 거리도 필요해요.", "그 친구도 당신을 생각하고 있어요.",
         "진심을 말해보세요.", "약속을 잡아보세요!", "하지 않는게 좋을 것 같아요..", "바라는데로 되지 않을 수 있어요",
         "주변 사람에게 한번 물어보세요. 🗣️"
-    ]
+    ],
+    "전체": decisions  # 기존 공통 리스트
 }
-
-
 reasons = [
     "느낌이 왔어요. 바로 이거예요.",
     "운명의 신이 이렇게 말했습니다.",
@@ -42,15 +41,14 @@ reasons = [
     "복잡할수록 단순하게!",
     "자신감을 가져요"
 ]
-
-# 버튼
+# 버튼 
 if st.button("🎲 click! click!"):
-    decision = random.choice(decisions)
+    selected_list = category_decisions.get(category, decisions)
+    decision = random.choice(selected_list)
     reason = random.choice(reasons)
-    
+
     st.markdown(f"## ✅ {decision}")
     st.caption(f"🧠 이유: {reason}")
-
 
 fortunes = [
     "오늘은 좋은 일이 생길 거예요 🍀",
