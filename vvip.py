@@ -6,6 +6,8 @@ st.set_page_config(page_title="click해 보살", page_icon="🎯")
 st.title("🎯 click해 보살")
 st.write("고민 또는 질문을 머릿속으로 생각하고, 버튼을 눌러주세요")
 
+category = st.selectbox("어떤 고민인가요?", ["전체", "연애", "일", "일상"])
+
 # 결정 리스트
 decisions = [
     "지금 당장 해보세요! 🔥",
