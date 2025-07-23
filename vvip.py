@@ -35,6 +35,8 @@ reasons = [
 
 # 버튼
 if st.button("🎲 click! click!"):
+    with st.spinner("보살이 깊이 생각 중...🧘‍♀️"):
+        time.sleep(1.5)
     decision = random.choice(decisions)
     reason = random.choice(reasons)
 
