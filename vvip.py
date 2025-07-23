@@ -1,3 +1,4 @@
+
 import streamlit as st
 import random
 
@@ -72,5 +73,5 @@ fortunes = [
 
 st.markdown("---")
 
-if st.button("🌟 오늘의 한 마디")
-st.write(random.choice(fortunes))
+if st.button("🌟 오늘의 한 마디"):
+    st.write(random.choice(fortunes))
