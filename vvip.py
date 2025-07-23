@@ -43,12 +43,11 @@ reasons = [
     "자신감을 가져요"
 ]
 
+# 버튼
 if st.button("🎲 click! click!"):
-    selected_list = category_decisions.[category, category_decisions]
-
-    decision = random.choice(selected_list)
+    decision = random.choice(decisions)
     reason = random.choice(reasons)
-
+    
     st.markdown(f"## ✅ {decision}")
     st.caption(f"🧠 이유: {reason}")
 
