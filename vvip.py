@@ -39,6 +39,5 @@ if st.button("🎲 click! click!"):
         time.sleep(1.5)
     decision = random.choice(decisions)
     reason = random.choice(reasons)
-
     st.markdown(f"## ✅ {decision}")
     st.caption(f"🧠 이유: {reason}")
